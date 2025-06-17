@@ -3,14 +3,301 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimalist CV Template</title>
+    <title>Creative CV Template</title>
     <style>
-        /* Minimalist CV styles here */
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .cv-template {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            display: block;
+            border: 3px solid #fff;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin: 20px 0 10px;
+            position: relative;
+            display: inline-block;
+            color: #2c3e50;
+        }
+        
+        h1:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 100px;
+            height: 4px;
+            background: #ff6b6b;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #7f8c8d;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        
+        .contact-item {
+            margin: 0 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-item .icon {
+            margin-right: 8px;
+            color: #ff6b6b;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .job-title {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .job-company {
+            color: #ff6b6b;
+            font-style: italic;
+        }
+        
+        .job-date {
+            color: #7f8c8d;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-tag {
+            background: #ff6b6b;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contact-item {
+                margin: 5px 0;
+            }
+        }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="cv-template minimalist-cv">
-        <!-- Minimalist CV content here -->
+    <div class="cv-template">
+        <img src="https://www.pngitem.com/pimgs/m/404-4042710_circle-profile-picture-png-transparent-png.png" alt="Profile" class="profile-img">
+        <header>
+            <h1>Alex Johnson</h1>
+            <div class="subtitle">CREATIVE DESIGNER & ART DIRECTOR</div>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="icon"><i class="fas fa-envelope"></i></span>
+                    <span>alex.johnson@example.com</span>
+                </div>
+                <div class="contact-item">
+                    <span class="icon"><i class="fas fa-phone"></i></span>
+                    <span>(555) 123-4567</span>
+                </div>
+                <div class="contact-item">
+                    <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                    <span>Los Angeles, CA</span>
+                </div>
+                <div class="contact-item">
+                    <span class="icon"><i class="fab fa-behance"></i></span>
+                    <span>behance.net/alexjohnson</span>
+                </div>
+            </div>
+        </header>
+        
+        <section class="section" id="about">
+            <h2>About Me</h2>
+            <p>Passionate creative director with 10+ years of experience in branding, digital design, and art direction. Specialize in creating visually compelling narratives that connect brands with their audiences. My approach combines strategic thinking with exceptional design execution to deliver memorable brand experiences across all touchpoints. Recognized for leading award-winning campaigns and building high-performing creative teams.</p>
+        </section>
+        
+        <section class="section" id="experience">
+            <h2>Professional Experience</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Art Director</span>
+                        <span class="job-company">Pixel & Grain Creative Studio</span>
+                    </div>
+                    <div class="job-date">2018 - Present</div>
+                </div>
+                <ul>
+                    <li>Lead a team of 12 designers in developing brand identities and marketing campaigns for Fortune 500 clients including Nike, Apple, and Starbucks</li>
+                    <li>Conceptualized and executed award-winning campaigns that increased client engagement by 60% on average</li>
+                    <li>Established creative processes that improved project delivery times by 30% while maintaining quality standards</li>
+                    <li>Mentored junior designers, with 5 team members progressing to senior roles under my guidance</li>
+                    <li>Pioneered the studio's motion graphics department, expanding service offerings and revenue streams</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Senior Designer</span>
+                        <span class="job-company">Brand Innovations Agency</span>
+                    </div>
+                    <div class="job-date">2015 - 2018</div>
+                </div>
+                <ul>
+                    <li>Led design for 8 major rebranding projects, including logo development and brand guideline creation</li>
+                    <li>Designed packaging systems that increased shelf visibility and sales by 25% for retail clients</li>
+                    <li>Collaborated with copywriters to develop cohesive visual and verbal brand identities</li>
+                    <li>Presented creative concepts to C-level executives, with 90% approval rate on first presentations</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Graphic Designer</span>
+                        <span class="job-company">Design Collective</span>
+                    </div>
+                    <div class="job-date">2012 - 2015</div>
+                </div>
+                <ul>
+                    <li>Created marketing materials for 50+ clients across print and digital media</li>
+                    <li>Developed social media graphics that increased engagement rates by 40% for key accounts</li>
+                    <li>Worked closely with printers and production teams to ensure quality execution of designs</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="section" id="education">
+            <h2>Education & Awards</h2>
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">BFA in Graphic Design</span>
+                        <span class="job-company">School of Visual Arts, New York</span>
+                    </div>
+                    <div class="job-date">2008 - 2012</div>
+                </div>
+                <p>Graduated with Honors. Specialized in Branding and Typography.</p>
+            </div>
+            <ul>
+                <li>2021 Cannes Lions - Silver Award for Branding (Nike Campaign)</li>
+                <li>2020 AIGA Design Excellence Award</li>
+                <li>2019 Communication Arts Design Annual Winner</li>
+                <li>2018 Webby Awards Honoree</li>
+            </ul>
+        </section>
+        
+        <section class="section" id="skills">
+            <h2>Skills & Expertise</h2>
+            <div class="skills">
+                <div class="skill-tag">Brand Identity</div>
+                <div class="skill-tag">Art Direction</div>
+                <div class="skill-tag">UI/UX Design</div>
+                <div class="skill-tag">Typography</div>
+                <div class="skill-tag">Packaging Design</div>
+                <div class="skill-tag">Creative Strategy</div>
+                <div class="skill-tag">Adobe Creative Suite</div>
+                <div class="skill-tag">Figma</div>
+                <div class="skill-tag">3D Modeling</div>
+                <div class="skill-tag">Motion Graphics</div>
+            </div>
+        </section>
+        
+        <section class="section" id="clients">
+            <h2>Select Clients</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+                <div style="text-align: center;">
+                    <i class="fab fa-apple" style="font-size: 24px;"></i>
+                    <div>Apple</div>
+                </div>
+                <div style="text-align: center;">
+                    <i class="fab fa-nike" style="font-size: 24px;"></i>
+                    <div>Nike</div>
+                </div>
+                <div style="text-align: center;">
+                    <i class="fab fa-spotify" style="font-size: 24px;"></i>
+                    <div>Spotify</div>
+                </div>
+                <div style="text-align: center;">
+                    <i class="fab fa-airbnb" style="font-size: 24px;"></i>
+                    <div>Airbnb</div>
+                </div>
+                <div style="text-align: center;">
+                    <i class="fas fa-mug-hot" style="font-size: 24px;"></i>
+                    <div>Starbucks</div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>

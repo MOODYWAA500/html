@@ -3,72 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple CV Template</title>
+    <title>Professional CV Template</title>
     <style>
-        body { margin: 0; padding: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f5f5; color: #333; line-height: 1.6; }
-        .cv-template { background: white; border-radius: 8px; padding: 30px; max-width: 800px; margin: 0 auto; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        .profile-img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 20px; display: block; border: 3px solid #fff; box-shadow: 0 3px 10px rgba(0,0,0,0.2); }
-        header { text-align: center; margin-bottom: 30px; padding-bottom: 20px; border-bottom: 2px solid #3498db; }
-        h1 { color: #2c3e50; margin: 20px 0 5px; font-size: 28px; }
-        .contact-info { font-size: 16px; color: #7f8c8d; margin-bottom: 15px; }
-        .contact-info span { margin: 0 10px; }
-        section { margin-bottom: 30px; }
-        h2 { color: #3498db; border-bottom: 1px solid #ecf0f1; padding-bottom: 8px; margin-bottom: 15px; font-size: 20px; }
-        .job { margin-bottom: 25px; }
-        .job-header { display: flex; justify-content: space-between; margin-bottom: 8px; }
-        .job-title { font-weight: 600; color: #2c3e50; }
-        .job-company { font-style: italic; color: #7f8c8d; }
-        .job-date { color: #7f8c8d; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 8px; }
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .cv-template {
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            display: block;
+            border: 3px solid #fff;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin: 0;
+            font-size: 28px;
+        }
+        
+        .title {
+            color: #7f8c8d;
+            font-size: 18px;
+            margin-top: 5px;
+        }
+        
+        .contact-info {
+            text-align: right;
+        }
+        
+        .contact-info p {
+            margin: 5px 0;
+            color: #7f8c8d;
+        }
+        
+        section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #3498db;
+            margin-bottom: 15px;
+            font-size: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+        }
+        
+        .job {
+            margin-bottom: 25px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+        
+        .job-title {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .job-company {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        
+        .job-date {
+            color: #7f8c8d;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .contact-info {
+                text-align: center;
+                margin-top: 15px;
+            }
+        }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <div class="cv-template">
         <img src="https://www.pngitem.com/pimgs/m/404-4042710_circle-profile-picture-png-transparent-png.png" alt="Profile" class="profile-img">
         <header>
-            <h1>John Doe</h1>
+            <div>
+                <h1>Michael Brown</h1>
+                <p class="title">Senior Financial Analyst</p>
+            </div>
             <div class="contact-info">
-                <span>john.doe@example.com</span>
-                <span>•</span>
-                <span>(123) 456-7890</span>
-                <span>•</span>
-                <span>linkedin.com/in/johndoe</span>
+                <p>michael.brown@example.com</p>
+                <p>(555) 987-6543</p>
+                <p>New York, NY</p>
+                <p>linkedin.com/in/michaelbrown</p>
             </div>
         </header>
 
         <section id="summary">
             <h2>Professional Summary</h2>
-            <p>Senior Software Engineer with 8+ years of experience in full-stack web development...</p>
+            <p>Chartered Financial Analyst (CFA) with 12 years of progressive experience in corporate finance, investment analysis, and financial modeling. Expertise in financial planning & analysis (FP&A), mergers & acquisitions (M&A), and business valuation. Proven ability to analyze complex financial data and provide strategic insights that drive business growth and profitability. Strong leadership skills with experience managing teams and presenting to executive stakeholders.</p>
         </section>
 
         <section id="experience">
-            <h2>Work Experience</h2>
+            <h2>Professional Experience</h2>
             <div class="job">
                 <div class="job-header">
                     <div>
-                        <span class="job-title">Senior Frontend Developer</span>
-                        <span class="job-company">Tech Solutions Inc., San Francisco</span>
+                        <span class="job-title">Senior Financial Analyst</span>
+                        <span class="job-company">Global Finance Corp, New York</span>
                     </div>
-                    <div class="job-date">June 2019 - Present</div>
+                    <div class="job-date">2017 - Present</div>
                 </div>
                 <ul>
-                    <li>Lead a team of 7 developers in building responsive web applications...</li>
+                    <li>Lead financial analyst for the Technology division, overseeing $250M in annual revenue</li>
+                    <li>Developed complex financial models that improved forecasting accuracy by 25% and supported strategic decision-making</li>
+                    <li>Led cross-functional teams in annual budget planning and quarterly forecasting processes</li>
+                    <li>Implemented cost-saving initiatives that reduced operational expenses by $2M annually</li>
+                    <li>Prepared executive presentations and board materials that clearly communicated financial performance and strategic recommendations</li>
+                    <li>Mentored 3 junior analysts, improving team productivity by 30%</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Financial Analyst</span>
+                        <span class="job-company">Premier Investment Group, Boston</span>
+                    </div>
+                    <div class="job-date">2013 - 2017</div>
+                </div>
+                <ul>
+                    <li>Conducted in-depth financial analysis for potential investment opportunities in the healthcare sector</li>
+                    <li>Built discounted cash flow (DCF) and comparable company analysis models for valuation purposes</li>
+                    <li>Prepared investment memorandums and presented findings to senior management</li>
+                    <li>Monitored portfolio company performance and prepared quarterly performance reports</li>
+                    <li>Assisted in due diligence for 3 successful acquisitions totaling $150M</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Associate Analyst</span>
+                        <span class="job-company">First National Bank, Chicago</span>
+                    </div>
+                    <div class="job-date">2010 - 2013</div>
+                </div>
+                <ul>
+                    <li>Prepared credit analyses for commercial loan applications ranging from $1M to $50M</li>
+                    <li>Developed financial models to assess borrower creditworthiness and repayment capacity</li>
+                    <li>Assisted relationship managers in structuring loan terms and conditions</li>
+                    <li>Monitored existing loan portfolio and identified potential risk factors</li>
                 </ul>
             </div>
         </section>
 
         <section id="education">
-            <h2>Education</h2>
-            <div class="job">
-                <div class="job-header">
-                    <div>
-                        <span class="job-title">Master of Computer Science</span>
-                        <span class="job-company">University of Technology, Boston</span>
-                    </div>
-                    <div class="job-date">2015 - 2016</div>
-                </div>
-            </div>
+            <h2>Education & Certifications</h2>
+            <ul>
+                <li><strong>MBA in Finance</strong>, Harvard Business School, 2012 (Graduated with Honors)</li>
+                <li><strong>Chartered Financial Analyst (CFA)</strong>, CFA Institute, 2015</li>
+                <li><strong>BS in Accounting</strong>, University of Chicago, 2008 (Magna Cum Laude)</li>
+                <li><strong>Certified Public Accountant (CPA)</strong>, Illinois, 2010 (Inactive)</li>
+            </ul>
+        </section>
+        
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul style="columns: 2; column-gap: 40px;">
+                <li>Financial Modeling & Valuation</li>
+                <li>DCF, LBO, and M&A Analysis</li>
+                <li>Advanced Excel (VBA, Power Query)</li>
+                <li>Financial Statement Analysis</li>
+                <li>Budgeting & Forecasting</li>
+                <li>ERP Systems (SAP, Oracle)</li>
+                <li>Tableau & Power BI</li>
+                <li>Python for Financial Analysis</li>
+            </ul>
+        </section>
+        
+        <section id="achievements">
+            <h2>Notable Achievements</h2>
+            <ul>
+                <li>Recognized as "Analyst of the Year" in 2019 for contributions to a $75M acquisition that delivered 22% ROI in first year</li>
+                <li>Developed a proprietary financial model adopted company-wide that reduced analysis time by 40%</li>
+                <li>Speaker at 3 national finance conferences on topics of financial modeling best practices</li>
+                <li>Volunteer mentor for CFA candidates through the CFA Society of New York</li>
+            </ul>
         </section>
     </div>
 </body>

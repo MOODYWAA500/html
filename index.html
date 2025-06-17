@@ -1,122 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Professional CV - John Doe</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #e8f0fe;
-      margin: 0;
-      padding: 0;
-    }
-    .cv-container {
-      max-width: 900px;
-      margin: 40px auto;
-      background-color: #ffffff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 10px;
-      overflow: hidden;
-      display: flex;
-    }
-    .left {
-      width: 35%;
-      background-color: #1a73e8;
-      color: white;
-      padding: 30px;
-      text-align: center;
-    }
-    .left img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-      object-fit: cover;
-    }
-    .left h2 {
-      margin: 10px 0 5px;
-    }
-    .left p {
-      font-size: 14px;
-      margin: 5px 0;
-    }
-    .right {
-      width: 65%;
-      padding: 30px;
-    }
-    .section {
-      margin-bottom: 25px;
-    }
-    .section h3 {
-      color: #1a73e8;
-      margin-bottom: 10px;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 5px;
-    }
-    .section p, .section li {
-      font-size: 15px;
-      color: #333;
-      line-height: 1.6;
-    }
-    ul {
-      padding-left: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern CV Template</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .cv-template {
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        .resume {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            min-height: 1000px;
+        }
+        
+        .sidebar {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px;
+            border-radius: 8px 0 0 8px;
+        }
+        
+        .main-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 0 8px 8px 0;
+            border-left: 1px solid #eee;
+        }
+        
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            display: block;
+            border: 3px solid #fff;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        
+        .job-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .section-title {
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 18px;
+            margin: 30px 0 15px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: #3498db;
+        }
+        
+        .contact-item {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-item i {
+            width: 20px;
+            margin-right: 10px;
+            text-align: center;
+        }
+        
+        .skill {
+            margin-bottom: 15px;
+        }
+        
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .skill-bar {
+            height: 6px;
+            background: #34495e;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        
+        .skill-level {
+            height: 100%;
+            background: #3498db;
+        }
+        
+        @media (max-width: 768px) {
+            .resume {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar,
+            .main-content {
+                border-radius: 8px;
+            }
+            
+            .sidebar {
+                border-radius: 8px 8px 0 0;
+            }
+            
+            .main-content {
+                border-radius: 0 0 8px 8px;
+                border-left: none;
+                border-top: 1px solid #eee;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-
-  <div class="cv-container">
-    <!-- Left Sidebar -->
-    <div class="left">
-      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Profile Photo">
-      <h2>John Doe</h2>
-      <p>Web Developer</p>
-      <p>📧 johndoe@example.com</p>
-      <p>📞 +1 234 567 890</p>
-      <p>🌍 New York, USA</p>
+    <div class="cv-template">
+        <div class="resume">
+            <div class="sidebar">
+                <img src="https://www.pngitem.com/pimgs/m/404-4042710_circle-profile-picture-png-transparent-png.png" alt="Profile" class="profile-img">
+                <h1>Jane Smith</h1>
+                <p style="text-align: center; margin-bottom: 30px;">Marketing Director</p>
+                
+                <div class="section-title">Contact</div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(987) 654-3210</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>jane.smith@example.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>New York, USA</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>linkedin.com/in/janesmith</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <span>janesmithportfolio.com</span>
+                    </div>
+                </div>
+                
+                <div class="section-title">Skills</div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <span>Digital Marketing</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <span>Brand Strategy</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <span>SEO/SEM</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <span>Social Media</span>
+                        <span>92%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 92%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <span>Data Analytics</span>
+                        <span>88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 88%;"></div>
+                    </div>
+                </div>
+                
+                <div class="section-title">Education</div>
+                <div style="margin-bottom: 15px;">
+                    <div style="font-weight: 600;">MBA in Marketing</div>
+                    <div>New York University</div>
+                    <div style="color: #bdc3c7; font-size: 14px;">2013 - 2015</div>
+                </div>
+                <div>
+                    <div style="font-weight: 600;">BA in Communications</div>
+                    <div>Columbia University</div>
+                    <div style="color: #bdc3c7; font-size: 14px;">2009 - 2013</div>
+                </div>
+                
+                <div class="section-title">Languages</div>
+                <div style="margin-bottom: 8px;">
+                    <span>English (Native)</span>
+                </div>
+                <div style="margin-bottom: 8px;">
+                    <span>Spanish (Fluent)</span>
+                </div>
+                <div>
+                    <span>French (Intermediate)</span>
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <div style="margin-bottom: 30px;">
+                    <h2 style="color: #2c3e50; border-bottom: none; margin-bottom: 10px;">Professional Profile</h2>
+                    <p>Visionary marketing leader with 12+ years of experience driving brand growth and digital transformation for global organizations. Proven ability to develop and execute innovative marketing strategies that increase market share, customer engagement, and revenue. Adept at building high-performing teams and fostering cross-functional collaboration to achieve business objectives.</p>
+                </div>
+                
+                <h2>Professional Experience</h2>
+                <div class="job" style="margin-bottom: 25px;">
+                    <div class="job-header" style="margin-bottom: 8px;">
+                        <div>
+                            <div class="job-title">Marketing Director</div>
+                            <div class="job-company">Global Brands Inc., New York</div>
+                        </div>
+                        <div class="job-date">2018 - Present</div>
+                    </div>
+                    <ul>
+                        <li>Lead a team of 15 marketing professionals across digital, content, and brand marketing functions</li>
+                        <li>Developed and executed digital marketing strategies that increased online sales by 150% over 3 years</li>
+                        <li>Oversaw a $5M annual marketing budget, achieving 40% improvement in ROI through data-driven optimizations</li>
+                        <li>Launched 3 successful product lines with integrated marketing campaigns that generated $12M in first-year revenue</li>
+                        <li>Established key performance indicators and analytics framework to measure campaign effectiveness</li>
+                    </ul>
+                </div>
+                
+                <div class="job" style="margin-bottom: 25px;">
+                    <div class="job-header" style="margin-bottom: 8px;">
+                        <div>
+                            <div class="job-title">Senior Marketing Manager</div>
+                            <div class="job-company">Premium Consumer Goods Co., Chicago</div>
+                        </div>
+                        <div class="job-date">2015 - 2018</div>
+                    </div>
+                    <ul>
+                        <li>Managed all digital marketing channels including SEO, PPC, email, and social media with $2.5M annual budget</li>
+                        <li>Grew organic website traffic by 200% through comprehensive SEO strategy and content marketing</li>
+                        <li>Implemented marketing automation system that increased lead conversion by 35%</li>
+                        <li>Led rebranding initiative that modernized company image and increased brand awareness by 40%</li>
+                    </ul>
+                </div>
+                
+                <div class="job" style="margin-bottom: 25px;">
+                    <div class="job-header" style="margin-bottom: 8px;">
+                        <div>
+                            <div class="job-title">Marketing Specialist</div>
+                            <div class="job-company">Digital Marketing Agency, Boston</div>
+                        </div>
+                        <div class="job-date">2012 - 2015</div>
+                    </div>
+                    <ul>
+                        <li>Developed and executed digital campaigns for 12+ clients across various industries</li>
+                        <li>Increased client social media engagement by an average of 75% through strategic content planning</li>
+                        <li>Created detailed campaign reports with actionable insights that improved client retention by 25%</li>
+                    </ul>
+                </div>
+                
+                <h2>Achievements</h2>
+                <ul>
+                    <li>Recipient of the 2020 "Marketing Innovator of the Year" award from the American Marketing Association</li>
+                    <li>Featured speaker at 5 international marketing conferences on topics of digital transformation</li>
+                    <li>Successfully launched a mentorship program that developed 8 junior marketers into leadership roles</li>
+                </ul>
+                
+                <h2>Certifications</h2>
+                <ul style="columns: 2; column-gap: 40px;">
+                    <li>Google Analytics Certified</li>
+                    <li>HubSpot Inbound Marketing</li>
+                    <li>Facebook Blueprint</li>
+                    <li>Google Ads Certified</li>
+                </ul>
+            </div>
+        </div>
     </div>
-
-    <!-- Right Content -->
-    <div class="right">
-      <div class="section">
-        <h3>Professional Summary</h3>
-        <p>
-          Passionate and detail-oriented web developer with 4+ years of experience in designing, developing, and maintaining responsive websites and applications. Strong expertise in JavaScript, React, and UI/UX design.
-        </p>
-      </div>
-
-      <div class="section">
-        <h3>Work Experience</h3>
-        <p><strong>Senior Frontend Developer — TechWave Inc.</strong><br>2022 – Present</p>
-        <ul>
-          <li>Lead the frontend team for developing modern React-based dashboards</li>
-          <li>Improved page load performance by 40%</li>
-        </ul>
-
-        <p><strong>Web Developer — CodeCraft</strong><br>2020 – 2022</p>
-        <ul>
-          <li>Built over 20 responsive websites for clients across multiple industries</li>
-          <li>Collaborated with designers and backend developers for optimal performance</li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <h3>Education</h3>
-        <p><strong>B.Sc. in Computer Science</strong><br>University of California, 2016 – 2020</p>
-      </div>
-
-      <div class="section">
-        <h3>Skills</h3>
-        <p>HTML, CSS, JavaScript, React, Git, Figma, Node.js</p>
-      </div>
-
-      <div class="section">
-        <h3>Languages</h3>
-        <p>English (Fluent), Spanish (Intermediate)</p>
-      </div>
-    </div>
-  </div>
-
 </body>
 </html>

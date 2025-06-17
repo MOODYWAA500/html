@@ -5,22 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple CV Template</title>
     <style>
-        body { margin: 0; padding: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f5f5; color: #333; line-height: 1.6; }
-        .cv-template { background: white; border-radius: 8px; padding: 30px; max-width: 800px; margin: 0 auto; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        .profile-img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 20px; display: block; border: 3px solid #fff; box-shadow: 0 3px 10px rgba(0,0,0,0.2); }
-        header { text-align: center; margin-bottom: 30px; padding-bottom: 20px; border-bottom: 2px solid #3498db; }
-        h1 { color: #2c3e50; margin: 20px 0 5px; font-size: 28px; }
-        .contact-info { font-size: 16px; color: #7f8c8d; margin-bottom: 15px; }
-        .contact-info span { margin: 0 10px; }
-        section { margin-bottom: 30px; }
-        h2 { color: #3498db; border-bottom: 1px solid #ecf0f1; padding-bottom: 8px; margin-bottom: 15px; font-size: 20px; }
-        .job { margin-bottom: 25px; }
-        .job-header { display: flex; justify-content: space-between; margin-bottom: 8px; }
-        .job-title { font-weight: 600; color: #2c3e50; }
-        .job-company { font-style: italic; color: #7f8c8d; }
-        .job-date { color: #7f8c8d; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 8px; }
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .cv-template {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            display: block;
+            border: 3px solid #fff;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin: 20px 0 5px;
+            font-size: 28px;
+        }
+        
+        .contact-info {
+            font-size: 16px;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info span {
+            margin: 0 10px;
+        }
+        
+        section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #3498db;
+            border-bottom: 1px solid #ecf0f1;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .job {
+            margin-bottom: 25px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+        
+        .job-title {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .job-company {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        
+        .job-date {
+            color: #7f8c8d;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
     </style>
 </head>
 <body>
@@ -39,7 +120,7 @@
 
         <section id="summary">
             <h2>Professional Summary</h2>
-            <p>Senior Software Engineer with 8+ years of experience in full-stack web development...</p>
+            <p>Senior Software Engineer with 8+ years of experience in full-stack web development, specializing in JavaScript frameworks and cloud architecture. Proven track record of delivering scalable, high-performance applications for Fortune 500 companies. Strong leadership skills with experience mentoring junior developers and collaborating with cross-functional teams.</p>
         </section>
 
         <section id="experience">
@@ -53,7 +134,25 @@
                     <div class="job-date">June 2019 - Present</div>
                 </div>
                 <ul>
-                    <li>Lead a team of 7 developers in building responsive web applications...</li>
+                    <li>Lead a team of 7 developers in building responsive web applications using React.js and Node.js, improving application performance by 40%</li>
+                    <li>Architected and implemented a microservices-based frontend infrastructure that reduced deployment times by 60%</li>
+                    <li>Collaborated with UX designers to create intuitive user interfaces, resulting in a 25% increase in user engagement</li>
+                    <li>Mentored 3 junior developers, conducting code reviews and providing technical guidance</li>
+                </ul>
+            </div>
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Web Developer</span>
+                        <span class="job-company">Digital Creations, New York</span>
+                    </div>
+                    <div class="job-date">January 2017 - May 2019</div>
+                </div>
+                <ul>
+                    <li>Developed and maintained 15+ company websites using modern JavaScript, HTML5, and CSS3/Sass</li>
+                    <li>Optimized website loading speed through image compression and lazy loading, reducing bounce rate by 25%</li>
+                    <li>Implemented SEO best practices across all web properties, resulting in 30% more organic traffic</li>
+                    <li>Integrated analytics tools to track user behavior, providing data for strategic business decisions</li>
                 </ul>
             </div>
         </section>
@@ -68,6 +167,45 @@
                     </div>
                     <div class="job-date">2015 - 2016</div>
                 </div>
+                <p>Specialization in Artificial Intelligence and Machine Learning. GPA: 3.8/4.0</p>
+            </div>
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Bachelor of Science in Software Engineering</span>
+                        <span class="job-company">State University, Chicago</span>
+                    </div>
+                    <div class="job-date">2011 - 2015</div>
+                </div>
+                <p>Minor in Business Administration. Graduated with Honors.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> JavaScript (ES6+), TypeScript, Python, Java, HTML5, CSS3/Sass</li>
+                <li><strong>Frameworks:</strong> React.js, Angular, Vue.js, Node.js, Express.js, Django</li>
+                <li><strong>Databases:</strong> MongoDB, PostgreSQL, Firebase, Redis</li>
+                <li><strong>Tools:</strong> Git, Docker, Kubernetes, AWS, Webpack, Jest</li>
+                <li><strong>Methodologies:</strong> Agile/Scrum, Test-Driven Development, CI/CD</li>
+            </ul>
+        </section>
+        
+        <section id="projects">
+            <h2>Notable Projects</h2>
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">E-commerce Platform Optimization</span>
+                    </div>
+                    <div class="job-date">2021</div>
+                </div>
+                <ul>
+                    <li>Led the performance optimization of a high-traffic e-commerce platform serving 1M+ monthly users</li>
+                    <li>Implemented server-side rendering and code splitting, reducing page load time from 5.2s to 1.8s</li>
+                    <li>Resulted in a 22% increase in conversion rate and 15% increase in average order value</li>
+                </ul>
             </div>
         </section>
     </div>
